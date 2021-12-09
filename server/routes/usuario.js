@@ -75,7 +75,6 @@ app.get('/usuarios/buscar/:termino', (req, res) => {
         })
 });
 
-//app.post('/usuario', [verificaToken, verificaRole], function(req, res) {
 app.post('/usuario', function(req, res) {
 
     let body = req.body;
@@ -108,7 +107,6 @@ app.post('/usuario', function(req, res) {
 
 });
 
-//app.put('/usuario/:id', [verificaToken, verificaRole], (req, res) => {
 app.put('/usuario/:id', function(req, res) {
 
     let id = req.params.id;
@@ -132,7 +130,6 @@ app.put('/usuario/:id', function(req, res) {
 });
 
 app.delete('/usuario/:id', verificaToken, (req, res) => {
-
 
     let id = req.params.id;
 
