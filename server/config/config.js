@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb+srv://fenix:ikkiavefenix@cluster0-bba2m.mongodb.net/GHDB';
 }
 process.env.URLDB = urlDB;
-//test new deploy to solve cors issue,2
+//test new deploy to solve cors issue,3
 
 
 //google client ID
