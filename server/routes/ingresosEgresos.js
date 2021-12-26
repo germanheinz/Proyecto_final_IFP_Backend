@@ -146,7 +146,7 @@ app.delete('/ingresoEgreso/delete', (req, res) => {
     // let id = req.params.id;
 
     IngresosEgresos.findByIdAndDelete(idToRemove, (err, ingresoEgresoDB) => {
-//
+
         if (err) {
             res.json(400).json({
                 ok: false,
