@@ -140,12 +140,13 @@ app.put('/ingresoEgreso/:id', function(req, res) {
 });
 
 //Eliminar album
-app.delete('/ingresoEgreso/:id', (req, res) => {
+app.delete('/ingresoEgreso/delete', (req, res) => {
 
-    let id = req.params.id;
+    let idToRemove = req.body.idToRemove;
+    // let id = req.params.id;
 
-    IngresosEgresos.findByIdAndDelete(id, (err, ingresoEgresoDB) => {
-
+    IngresosEgresos.findByIdAndDelete(idToRemove, (err, ingresoEgresoDB) => {
+//
         if (err) {
             res.json(400).json({
                 ok: false,
@@ -163,8 +164,8 @@ app.delete('/ingresoEgreso/:id', (req, res) => {
                 }
             });
         } else {
-            return res.json({
-                ok: true,
+           return res.json({
+                ok: true
             });
         }
     });

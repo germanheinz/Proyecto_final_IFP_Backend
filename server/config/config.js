@@ -21,7 +21,8 @@ process.env.SEED = process.env.SEED || 'este-es-el-seed';
 let urlDB;
 
 if (process.env.NODE_ENV === 'dev') {
-    urlDB = 'mongodb://localhost:27017/cafe';
+    // urlDB = 'mongodb://localhost:27017/cafe';
+    urlDB = 'mongodb+srv://fenix:ikkiavefenix@cluster0-bba2m.mongodb.net/GHDB';
 } else {
     //urlDB = process.env.MONGO_URI;
     urlDB = 'mongodb+srv://fenix:ikkiavefenix@cluster0-bba2m.mongodb.net/GHDB';
